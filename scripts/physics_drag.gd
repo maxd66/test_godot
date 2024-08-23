@@ -8,6 +8,7 @@ var last_body : Node2D
 var temp_body : Node2D
 
 func _input(event):
+	# adding comment to test
 	#print("Registering event")
 	var mouse_position = get_viewport().get_mouse_position()
 	
