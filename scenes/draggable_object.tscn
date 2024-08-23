@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmchhmrd3len4"]
+
+[ext_resource type="Texture2D" uid="uid://cu5jl5c4o24tn" path="res://icon.svg" id="1_xdlgb"]
+[ext_resource type="Script" path="res://scenes/draggable_object.gd" id="2_jq8ua"]
+
+[node name="Draggable Object" type="Sprite2D"]
+texture = ExtResource("1_xdlgb")
+script = ExtResource("2_jq8ua")

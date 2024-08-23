@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcyv480n7e0f"]
+
+[ext_resource type="Script" path="res://scripts/physics_drag.gd" id="1_1jwcg"]
+[ext_resource type="Texture2D" uid="uid://cu5jl5c4o24tn" path="res://icon.svg" id="1_r2j76"]
+
+[node name="physics_drag" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_1jwcg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r2j76")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1.61293, 3.1099)
+scale = Vector2(1.11294, 1.10991)
+polygon = PackedVector2Array(-58, -59, 56, -59, 56, 57, -57, 56)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
