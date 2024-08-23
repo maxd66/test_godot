@@ -5,6 +5,7 @@ var draggable_physics_scene = preload("res://scenes/physics_drag.tscn")
 
 func _ready():
 	# new comment pull
+	# second new pull
 	var drag_instance_1 = draggable_object_scene.instantiate()
 	var block1 = $"Starting Zone2"
 	var block2 = $"Ending Zone2"
